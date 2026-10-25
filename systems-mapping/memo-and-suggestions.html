@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Memo &amp; Suggestions · Systems Mapping Docs</title>
+  <meta name="description" content="Compare each model suggestion with your memo before deciding what belongs on the map.">
+  <link rel="icon" href="/favicon.svg">
+  <link rel="stylesheet" href="docs.css?v=20261025">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+  <a class="brand" href="index.html"><span class="brand-word">Systems Mapping</span><span class="brand-docs">Docs</span></a>
+  <nav class="masthead-links" aria-label="Site">
+    <a href="/">Open the app</a>
+    <a href="https://ailab.gc.cuny.edu/">CUNY AI Lab</a>
+  </nav>
+</header>
+<div class="layout">
+  <nav class="sidebar" aria-label="Documentation"><div class="nav-group"><h3>Home</h3><ul><li><a href="index.html">Home</a></li></ul></div><div class="nav-group"><h3>Getting Started</h3><ul><li><a href="getting-started.html">Getting Started</a></li><li><a href="workspace-basics.html">Workspace Basics</a></li></ul></div><div class="nav-group"><h3>Build & Interpret</h3><ul><li><a href="levels.html">The Four Levels</a></li><li><a href="memo-and-suggestions.html" aria-current="page">Memo & Suggestions</a></li><li><a href="map.html">The Map</a></li><li><a href="evidence-and-field-notes.html">Evidence & Field Notes</a></li><li><a href="export-and-sharing.html">Export & Sharing</a></li></ul></div><div class="nav-group"><h3>Teach & Review</h3><ul><li><a href="course-access.html">Course Access</a></li><li><a href="instructor-console.html">Instructor Console</a></li><li><a href="teaching-tips.html">Teaching Tips</a></li><li><a href="sample-activities.html">Sample Activities</a></li><li><a href="student-onboarding.html">Student Onboarding</a></li><li><a href="use-cases.html">Use Cases</a></li></ul></div><div class="nav-group"><h3>Related</h3><ul><li><a href="privacy-and-limits.html">Privacy & Limits</a></li></ul></div></nav>
+  <main id="main" class="content">
+    <h1>Memo &amp; Suggestions</h1>
+<p class="lede">Compare each model suggestion with your memo before deciding what belongs on the map.</p>
+<h2>Adding a Memo</h2>
+<p>Write a one-sentence inquiry that names the focal person or group and what you want to understand. Then paste or upload the memo, which can contain field notes, a case description, an interview, or a reading. The app accepts about 128 KB of text.</p>
+<p>Before the first model request, read the <strong>transfer disclosure</strong>. It identifies what the app sends, including your memo, inquiry, current level, and published course guidance. Each level can use a different memo. The next level's review also receives your earlier Field Notes as your own notes, separate from the memo.</p>
+<h2>Reviewing Suggestions</h2>
+<figure class="narrow"><img alt="One suggestion in the Notebook: Maya, 'Focal person who volunteers at the garden and attends the library workshop', with Details, Add to map, Set aside, Remove, and Finish review" loading="lazy" src="img/suggestion-card.png"/><figcaption>Each card presents a label and the model's short reason. Open Details to inspect the source passage before deciding.</figcaption></figure>
+<p>The Notebook presents one suggestion at a time and shows your position in a counter such as 1 / 10. Use the selector to move between Items and Connections. Open <strong>Details</strong> to read the source passage and the model's reasoning. When a suggestion lacks a passage, examine it as an inference and check whether the memo supports it.</p>
+<p>Choose Add to map to keep a suggestion, Set aside to retain it for later, or Remove to reject it. Press <strong>Finish review</strong> after every suggestion has a decision. Undecided suggestions keep the stage open. If you revise the inquiry or memo, Update suggestions requests another model pass.</p>
+<p>Project → Preferences includes Automatic suggestion addition. When you turn it on, the app adds suggestions that pass its structural checks immediately, and you remove any that do not belong. The setting starts off, so the usual review asks you to decide before an item enters the map.</p>
+<h2>What the Model Sends Back</h2>
+<p>A first pass requests at most six items and four connections, subject to the current level's rules. Meso and Macro return items whose scopes identify the earlier elements they connect. Each item includes a label and a short reason, with a source passage where the model supplies one.</p>
+<p>The app checks whether the response follows the level's structure. It reports invalid output as an error and leaves it unpatched. The app preserves the model's labels and shows the response without silently relabeling or filtering it.</p>
+<p>Each explicit review action starts one model attempt with a 90-second budget. Only a known availability refusal from the Gateway triggers an automatic fallback attempt. A timeout or invalid response stops the request and shows an explanation. Reloading recovers an existing result for the same request without starting another model attempt.</p>
+<h2>Guidance and Evidence</h2>
+<p>The Guidance and evidence disclosure shows the instructor's published guidance and course materials for the current Part and stage. Requests include those materials. For example, an instructor can supply the course's definition of a Micro setting so the model receives the same terms students use in class.</p>
+<h2>Working Without the Model</h2>
+<p>You can complete every stage by hand. Use Map tools → Add item to create an item, then select two items to create a relationship. Students who read and code the memo themselves, including those in courses that disable model requests, follow the same five stages.</p>
+
+    <footer class="page-foot">
+      <p>Systems Mapping grew from the Critical AI Literacy Institute and continues with the <a href="https://ailab.gc.cuny.edu/">CUNY AI Lab</a>.</p>
+      <p>The app remains in classroom development. Use Report a problem if its behavior differs from these pages.</p>
+    </footer>
+  </main>
+</div>
+</body>
+</html>

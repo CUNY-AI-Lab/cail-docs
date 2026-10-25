@@ -1,9 +1,25 @@
-# CAIL Sandbox Docs redirects
+# CAIL Docs
 
-Documentation is maintained in the [CUNY AI Lab website repository](https://github.com/CUNY-AI-Lab/CUNY-AI-Lab-website/tree/main/src/content/sandbox-docs) and published at https://ailab.gc.cuny.edu/sandbox-docs/.
+Documentation for the CUNY AI Lab's tools, kept in one place so the writing can be reviewed and revised together. Each folder is one documentation set.
 
-This former GitHub Pages site redirects old bookmarks to the matching article. Root hash links, article paths, `.html` and `.md` URLs preserve their destination; query strings and section anchors are retained. GitHub Pages serves static files, so these are browser redirects using `location.replace`, not HTTP 301 responses. A visible link and guide list work without JavaScript.
+| Folder | Tool | Where readers see it |
+| --- | --- | --- |
+| `stem-splitter/` | Stem Splitter, the browser mixer for close listening | Served by the Stem Splitter app under `/docs/` |
+| `systems-mapping/` | Systems Mapping, the course workspace for building and interpreting system maps | Served by the Systems Mapping app under `/docs/` |
+| `sandbox/` | CAIL Sandbox, the Lab's Open WebUI deployment | Published at https://ailab.gc.cuny.edu/sandbox-docs/ from the [website repository](https://github.com/CUNY-AI-Lab/CUNY-AI-Lab-website/tree/main/src/content/sandbox-docs) |
 
-The original Markdown remains in Git as historical source and is excluded from Pages publication by `_config.yml`. The 404 page handles old article paths. Future content changes belong in the website repository.
+## How each set is maintained
 
-Run `bun scripts/check-static-site.js` and `bun scripts/check-redirect.js` before publishing. Merge to main publishes through the existing GitHub Pages build.
+The Stem Splitter and Systems Mapping sets are static HTML pages with a shared `docs.css` and an `img/` folder. They are written as prose, one idea per paragraph, for instructors and students who may be new to the tool. Links to the app itself (`/`, `/favicon.svg`) are root-relative because the app serves the pages. Copy a folder into the app's `public/docs/` directory to ship a revision.
+
+The Sandbox set is the original Markdown, kept as the historical source of the articles that moved into the Lab website in September 2026. Current edits to the Sandbox documentation belong in the website repository, which publishes them.
+
+## Checks
+
+```
+node scripts/check-links.mjs
+```
+
+The check confirms that every relative link and asset in the three sets resolves to a file in this repository. It runs on every push and pull request.
+
+This repository was formerly `sandbox-docs` and served a GitHub Pages site. That site is no longer published; the Sandbox documentation lives on the Lab website.

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy &amp; Limits · Systems Mapping Docs</title>
+  <meta name="description" content="Check who can read your work and what leaves the browser before you add a memo or share a map.">
+  <link rel="icon" href="/favicon.svg">
+  <link rel="stylesheet" href="docs.css?v=20261025">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+  <a class="brand" href="index.html"><span class="brand-word">Systems Mapping</span><span class="brand-docs">Docs</span></a>
+  <nav class="masthead-links" aria-label="Site">
+    <a href="/">Open the app</a>
+    <a href="https://ailab.gc.cuny.edu/">CUNY AI Lab</a>
+  </nav>
+</header>
+<div class="layout">
+  <nav class="sidebar" aria-label="Documentation"><div class="nav-group"><h3>Home</h3><ul><li><a href="index.html">Home</a></li></ul></div><div class="nav-group"><h3>Getting Started</h3><ul><li><a href="getting-started.html">Getting Started</a></li><li><a href="workspace-basics.html">Workspace Basics</a></li></ul></div><div class="nav-group"><h3>Build & Interpret</h3><ul><li><a href="levels.html">The Four Levels</a></li><li><a href="memo-and-suggestions.html">Memo & Suggestions</a></li><li><a href="map.html">The Map</a></li><li><a href="evidence-and-field-notes.html">Evidence & Field Notes</a></li><li><a href="export-and-sharing.html">Export & Sharing</a></li></ul></div><div class="nav-group"><h3>Teach & Review</h3><ul><li><a href="course-access.html">Course Access</a></li><li><a href="instructor-console.html">Instructor Console</a></li><li><a href="teaching-tips.html">Teaching Tips</a></li><li><a href="sample-activities.html">Sample Activities</a></li><li><a href="student-onboarding.html">Student Onboarding</a></li><li><a href="use-cases.html">Use Cases</a></li></ul></div><div class="nav-group"><h3>Related</h3><ul><li><a href="privacy-and-limits.html" aria-current="page">Privacy & Limits</a></li></ul></div></nav>
+  <main id="main" class="content">
+    <h1>Privacy &amp; Limits</h1>
+<p class="lede">Check who can read your work and what leaves the browser before you add a memo or share a map.</p>
+<h2>What Instructors Can See</h2>
+<p>Instructors can check progress in a course workspace before you submit a map. They see the content through an explicitly submitted revision or a project link you share under the workspace's access rules. General-workspace maps remain separate from the course.</p>
+<table>
+<thead><tr><th>Item</th><th>General workspace</th><th>Course workspace</th></tr></thead>
+<tbody>
+<tr><td>That a map exists, its level and stage</td><td>You, plus eligible recipients of a shared project link</td><td>Course instructor (metadata only)</td></tr>
+<tr><td>Map content, memo, evidence, Field Notes</td><td>You, plus eligible recipients of a shared project link</td><td>Course instructor after submission, plus eligible recipients of a shared project link</td></tr>
+<tr><td>Project link</td><td>Signed-in Lab members with the link</td><td>Current course members with the link</td></tr>
+<tr><td>Model request metadata (fingerprints, revision IDs)</td><td>Operators, without memo text</td><td>Operators, without memo text</td></tr>
+</tbody>
+</table>
+<p>Instructor feedback leaves your map intact. A general Lab administrator receives no course-owner override.</p>
+<h2>Storage and Retention</h2>
+<p>The app saves up to 200 maps per workspace to your account and checks revisions before accepting changes. It also keeps a recovery copy in the browser. Anyone who uses the same browser profile can read that browser storage, which CUNY Login does not encrypt.</p>
+<p>The app retains model request inputs and results for 24 hours so a reload can recover a completed result. It retains request tokens for seven days to reject replayed requests. Pending submission snapshots last 30 days, and snapshots with recorded feedback last 180 days. When the app purges a snapshot, it removes the content and retains a hashed receipt.</p>
+<p>Project links expire after 90 days. You can revoke a link earlier when the people who received it no longer need to view the live map.</p>
+<h2>Model Limits</h2>
+<p>Requests pass through the Lab's model gateway to GLM 5.3 Flash. The app uses a backup only after a known availability refusal and stores no provider keys itself. Each explicit action starts one attempt with a 90-second budget. A timeout, quota denial, or invalid response stops with an explanation.</p>
+<p>A first review pass requests at most six items and four connections under the current level's rules. The app preserves the returned labels and reports invalid structure without silently repairing the response. Memo text has a limit of 131,072 bytes, and the inquiry has a limit of 8,192 bytes.</p>
+<p>Read the <strong>transfer disclosure</strong> before the first request. Requests include course guidance and materials, while instructor identity and prompt history stay out of the request.</p>
+<h2>What to Put in a Memo</h2>
+<p>The app stores memo text with the map and sends it to the model when you request a review. De-identify fieldwork before pasting it and follow your course's confidentiality rules. The browser creates exports locally, so review a copy before sharing it. Problem reports exclude memo text and map content.</p>
+<h2>Reporting a Problem</h2>
+<p><strong>Report a problem</strong> in the footer opens a form with one field for your description. The report includes your verified account name, the page, and the app release. For access questions, email <a href="mailto:ailab@gc.cuny.edu">ailab@gc.cuny.edu</a>.</p>
+
+    <footer class="page-foot">
+      <p>Systems Mapping grew from the Critical AI Literacy Institute and continues with the <a href="https://ailab.gc.cuny.edu/">CUNY AI Lab</a>.</p>
+      <p>The app remains in classroom development. Use Report a problem if its behavior differs from these pages.</p>
+    </footer>
+  </main>
+</div>
+</body>
+</html>
