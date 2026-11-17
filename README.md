@@ -6,7 +6,7 @@ Documentation for the CUNY AI Lab's tools, kept in one place so the writing can 
 | --- | --- | --- |
 | `stem-splitter/` | Stem Splitter, the browser mixer for close listening | Served by the Stem Splitter app under `/docs/` |
 | `systems-mapping/` | Systems Mapping, the course workspace for building and interpreting system maps | Guide source maintained here; copy into the app to publish |
-| `sandbox/` | CAIL Sandbox, the Lab's Open WebUI deployment | Published at https://ailab.gc.cuny.edu/sandbox-docs/ from the [website repository](https://github.com/CUNY-AI-Lab/CUNY-AI-Lab-website/tree/main/src/content/sandbox-docs) |
+| `sandbox/` | CAIL Sandbox, the Lab's Open WebUI deployment | Published at https://ailab.gc.cuny.edu/docs/sandbox/ from the [website repository](https://github.com/CUNY-AI-Lab/CUNY-AI-Lab-website/tree/main/src/content/sandbox-docs) |
 
 ## How each set is maintained
 
